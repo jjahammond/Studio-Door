@@ -7,6 +7,13 @@ a, a:visited, a:enabled, a:checked, a:active {
   text-decoration: none;
   display: inline-block;
   font-size: 1.2em;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+  -webkit-animation: fadeIn 2s forwards;
+  -moz-animation: fadeIn 2s forwards;
+  -o-animation: fadeIn 2s forwards;
+  -ms-animation: fadeIn 2s forwards;
+  animation-delay: 3s;
 }
 
 a:hover {
@@ -16,4 +23,44 @@ a:hover {
 
 div {
   text-align: center;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
 }
