@@ -1,12 +1,85 @@
+@font-face {
+    font-family: 'gillsans-lightlight';
+    src: url('/fonts/gillsanslight/gillsans-light-webfont.woff2') format('woff2'),
+         url('/fonts/gillsanslight/gillsans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
   background: #000000;
+  color: #D2D2D2;
+  font-family: 'gillsans-lightlight';
+}
+
+video {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.main {
+  margin-top: -425px;
+  font-size: 2.3rem;
+}
+
+.info {
+  width: 45%;
+  margin-top: 35px;
+  font-size: 1.4rem;
+  display: inline-block;
+}
+
+.bottom-link {
+  color: #D2D2D2;
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+.form-control, .form-control:active, .form-control:enabled {
+  background: #000000;
+  color: #D2D2D2;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 30px;
+  width: 50%;
+  display: inline-block;
+  border: 2px solid #D2D2D2;
+  border-radius: 10px;
+  outline: 0;
+  box-shadow: none!important;
+}
+
+.form-control::placeholder, #emailHelp {
+  color: #B2B2B2 !important;
+}
+
+
+.btn-primary, .btn-primary:active, .btn-primary:enabled, .btn-primary:focus {
+  background: #000000 !important;
+  color: #D2D2D2;
+  border-color: #D2D2D2 !important;
+  text-align: center;
+  font-size: 1.2rem;
+  width: 20%;
+  display: inline-block;
+  outline: 0;
+  box-shadow: none!important;
 }
 
 a, a:visited, a:enabled, a:checked, a:active {
   color: #D2D2D2;
   text-decoration: none;
   display: inline-block;
-  font-size: 1.2em;
+  /* font-size: 1em; */
+}
+
+a:hover {
+  color: #B2B2B2;
+  text-decoration: none;
+}
+
+.fade-in {
   opacity: 0;
   animation: fadeIn 2s forwards;
   -webkit-animation: fadeIn 2s forwards;
@@ -14,11 +87,6 @@ a, a:visited, a:enabled, a:checked, a:active {
   -o-animation: fadeIn 2s forwards;
   -ms-animation: fadeIn 2s forwards;
   animation-delay: 3s;
-}
-
-a:hover {
-  color: #B2B2B2;
-  text-decoration: none;
 }
 
 div {
