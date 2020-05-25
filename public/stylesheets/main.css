@@ -63,6 +63,8 @@ video {
   font-size: 1.2rem;
   width: 20%;
   display: inline-block;
+  border: 1px solid #D2D2D2;
+  border-radius: 10px;
   outline: 0;
   box-shadow: none!important;
 }
