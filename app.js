@@ -36,6 +36,7 @@ app.post("/", (req, res) => {
   // Save to database
   Email.findOne(newEmail, (err, foundOne) => {
     if (err) {
+      console.log("Hi");
       console.log(err);
     } else {
       if (!foundOne) {
