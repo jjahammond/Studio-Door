@@ -13,34 +13,18 @@ body {
   font-family: 'gillsans-lightlight';
 }
 
+div {
+  text-align: center;
+}
+
 video {
-  width: 100%;
+  width: 70%;
   margin-top: 50px;
-  position: fixed;
-  left: 0;
 }
 
 .main {
-  margin-top: 300px;
+  /* margin-top: 300px; */
   font-size: 2.3rem;
-}
-
-@media (max-width: 992px) {
-  .main {
-    margin-top: 250px;
-  }
-}
-
-@media (max-width: 768px) {
-  .main {
-    margin-top: 200px;
-  }
-}
-
-@media (max-width: 576px) {
-  .main {
-    margin-top: 150px;
-  }
 }
 
 .info {
@@ -121,9 +105,34 @@ a:hover {
   animation-delay: 3s;
 }
 
-div {
-  text-align: center;
+.fade-in {
+  margin-top: -500px;
 }
+
+@media (max-width: 1200px) {
+  .fade-in {
+    margin-top: -400px;
+  }
+}
+
+@media (max-width: 992px) {
+  .fade-in {
+    margin-top: -300px;
+  }
+}
+
+@media (max-width: 768px) {
+  video {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .fade-in {
+    margin-top: -250px;
+  }
+}
+
 
 @keyframes fadeIn {
   0% {
