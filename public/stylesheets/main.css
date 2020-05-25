@@ -16,15 +16,17 @@ body {
 video {
   width: 100%;
   margin-top: 50px;
+  position: fixed;
+  left: 0;
 }
 
 .main {
-  margin-top: -425px;
+  margin-top: 300px;
   font-size: 2.3rem;
 }
 
 .info {
-  width: 45%;
+  /* width: 45%; */
   margin-top: 35px;
   font-size: 1.4rem;
   display: inline-block;
