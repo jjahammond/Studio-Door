@@ -17,7 +17,7 @@ div {
   text-align: center;
 }
 
-video {
+video, img {
   width: 70%;
   margin-top: 50px;
 }
@@ -105,30 +105,30 @@ a:hover {
   animation-delay: 3s;
 }
 
-.fade-in {
+.content {
   margin-top: -500px;
 }
 
 @media (max-width: 1200px) {
-  .fade-in {
+  .content {
     margin-top: -400px;
   }
 }
 
 @media (max-width: 992px) {
-  .fade-in {
+  .content {
     margin-top: -300px;
   }
 }
 
 @media (max-width: 768px) {
-  video {
+  video, img {
     width: 100%;
   }
 }
 
 @media (max-width: 576px) {
-  .fade-in {
+  .content {
     margin-top: -200px;
   }
 }

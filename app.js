@@ -36,8 +36,8 @@ app.post("/", (req, res) => {
   // Save to database
   Email.findOne(newEmail, (err, foundOne) => {
     if (err) {
-      console.log("Hi");
       console.log(err);
+      res.redirect("/");
     } else {
       if (!foundOne) {
         Email.create(newEmail, (err, newCreated) => {
@@ -45,15 +45,23 @@ app.post("/", (req, res) => {
             console.log(err);
           } else {
             console.log("Email added to db");
-            res.redirect("/");
+            res.redirect("/submitted");
           }
         });
       } else {
         console.log("Email exists in db");
-        res.redirect("/");
+        res.redirect("/submitted");
       }
     }
   });
+});
+
+app.get("/submitted", (req, res) => {
+  res.render("submitted");
+});
+
+app.get("/*", (req, res) => {
+  res.redirect("/");
 });
 
 // *************  Request listener *******************
